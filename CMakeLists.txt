@@ -200,4 +200,4 @@ include_directories(
 # Commander node
 add_executable(commander src/commander.cpp)
 target_link_libraries(commander ${catkin_LIBRARIES})
-add_dependencies(commander auto_nav_commander_generate_messages_cpp)
+# add_dependencies(commander auto_nav_commander_generate_messages_cpp)
