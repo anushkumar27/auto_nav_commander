@@ -29,8 +29,8 @@ int main(int argc, char **argv) {
 	// PUBLISHER
 	// To publish the raw destination pose to the FCU
 	ros::Publisher pos_pub = nh.advertise<geometry_msgs::PoseStamped>
-			// ("auto_nav/planner/dest/pose", 10);
-			("auto_nav/mavros_bridge/pose", 10);
+			("auto_nav/planner/dest/pose", 10);
+			// ("auto_nav/mavros_bridge/pose", 10);
 
 	// The setpoint publishing rate MUST be faster than 2Hz
 	ros::Rate rate(20.0);
